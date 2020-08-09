@@ -196,7 +196,7 @@ header p{
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-	#competencias h2, h3{
+	#competencias h3{
 		width: 100%;
 		text-align: center;
 
@@ -207,7 +207,7 @@ header p{
 	text-align:center; 
 }
 
-.comp img:hover{
+.comp .img:hover{
 	-ms-transform: rotate (-10deg);
 	-webkit-transform: rotate (-10deg);
 	-moz-transform: rotate (-10deg);
@@ -218,6 +218,11 @@ header p{
 
 .comp img{
 	border:10px groove  #00FA9A;
+	width: 33.33333333333%;
+	
+
+	
+
 }
 
 
@@ -239,7 +244,7 @@ header p{
 	font-size: 2em;
 	text-align: center;
 }
-#competencias h3,p{
+#competencias h3, p{
 	margin-bottom: 20px;
 	margin-top: 10px;
 	font-size: 1em;
@@ -253,9 +258,9 @@ header p{
 	margin-bottom: 0;
 }
 #competencias .comp p{
-	border-left: 2px solid black;
-	border-right: 2px solid black;
-	border-bottom: 2px solid black;
+	border-left: 5px groove #0000FF;
+	border-right: 5px groove #0000FF;
+	border-bottom: 5px groove #0000FF ;
 	border-radius: 20%;
 	margin-top: 0;
 	font-family: "Cookie&family", sans-serif;
@@ -264,10 +269,76 @@ header p{
 	line-height: 1.5;   
 }
 
+/*hobby*/
+#hobby {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	width: 100%;
+
+}
+#hobby h2{
+	margin-bottom:20px 
+	margin-top:10px;
+	font-size:2em;
+	text-align: center;
+}
+
+.hobby{
+	width: 80%
+	align-items: center;
+	text-align: center;
+}
+
+.hobby h3{
+	font-size: 0.8em;
+	margin-top: 10px;
+	margin-bottom: 14px;
+}
+/*contato*/
+#contato {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #0000FF
+	width:100%;
+}
+#contato h2{
+	margin-left: 20px;
+	margin-width:20px   
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 2em;
+	text-align: center;
+	color:#FF6347;                                                                   ;
+}
+#conta > p{
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	color:#4169E1; 
+	text-align: center;
+}
+#contato a{
+	text-decoration: none;
+	color: #00CED1;
+	font-family:"Dancing+Script", sans-serif;
+	text-align: center;
+}
 
 
-
-
+/*footer*/
+footer{
+	text-align: center;
+	width: 100%;
+	background-color: #00CED1;
+	color: #FF6347;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
 
 @media screen and (min-width: 768px;){
 
@@ -281,12 +352,13 @@ nav{
 nav ul{
 
 	flex-direction: row;
+	width: 70%;
 
 }
 
 /* Header */
 header{
-	height: 600px;
+	 
 	height: 60vh;
 	justify-content: center;
 
@@ -298,7 +370,8 @@ header{
 	padding-left: 15px;
 	line-height: 1.5;
 	 
-}/* SOBRE */ 
+}
+  /* SOBRE */ 
 #sobre{
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -334,3 +407,21 @@ header{
 	padding: 0 10px;
 
 }
+ /*CONTATO*/
+ #contato {
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
+ 	justify-content: space-around;
+ 	max-width: 100%;
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	max-height: 40vh;
+ 	width: 100%;
+ }
+#contato h2,
+#contato p{
+	width: 100%;
+	text-align: center;
+}
+
+
